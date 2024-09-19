@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ristorante [
+    <!ELEMENT ristorante (piatto+)>
+    <!ELEMENT piatto (nome,prezzo,descrizione)>
+    <!ELEMENT nome (#PCDATA)>
+    <!ELEMENT prezzo (#PCDATA)>
+    <!ELEMENT descrizione (#PCDATA)>
+]>
+<ristorante>
+    <piatto>
+        <nome>Tagliatelle al Ragù Bolognese</nome>
+        <prezzo>€13</prezzo>
+        <descrizione>Tagliatelle fatte in casa servite con un ricco ragù di carne, cucinato lentamente secondo la tradizione emiliana</descrizione>
+    </piatto>
+    <piatto>
+        <nome>Pesce Spafa alla Griglia</nome>
+        <prezzo>€18</prezzo>
+        <descrizione>Pesce spada fresco grigliato con erbe aromatiche, accompagnato da verdure di stagione saltate</descrizione>
+    </piatto>
+    <piatto>
+        <nome>Panna Cotta</nome>
+        <prezzo>€7</prezzo>
+        <descrizione>Dolce al chucchiaio morbido e cremoso, servito con coulis di frutti di bosco</descrizione>
+    </piatto>
+</ristorante>

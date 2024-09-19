@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE conferenza [
+    <!ELEMENT conferenza (titolo,data,luogo,sessione+)>
+    <!ELEMENT sessione (titolo,presidente,orario,abstract)>
+    <!ELEMENT titolo (#PCDATA)>
+    <!ELEMENT presidente (#PCDATA)>
+    <!ELEMENT orario (#PCDATA)>
+    <!ELEMENT abstract (#PCDATA)>
+    <!ELEMENT data (#PCDATA)>
+    <!ELEMENT luogo (#PCDATA)>
+]>
+<conferenza>
+    <titolo>COnferenza Internazionale sulla Tecnologia 2024</titolo>
+    <data>2024-05-2020</data>
+    <luogo>Milano, Italia</luogo>
+    <sessione>
+        <titolo>Futuro dell'Intelligenza Artificiale</titolo>
+        <presidente>Br. Marco Neri</presidente>
+        <orario>9:00 - 10:30</orario>
+        <abstract>Un'analisi delle prossime tendenze nell'intelligenza artificiale e il loro impatto sul settore tecnologico</abstract>
+    </sessione>
+    <sessione>
+        <titolo>Cybersecurity: Sfide e Soluzioni</titolo>
+        <presidente>Ing. Sofia Bianchi</presidente>
+        <orario>11:00 - 12:30</orario>
+        <abstract>Discussione sulle ultime minacce alla sicurezza informatica e le strategie per mitigarle</abstract>
+    </sessione>
+    <sessione>
+        <titolo>Blockchain oltre le criptovalute</titolo>
+        <presidente>prof. Marcello Rossi</presidente>
+        <orario>14:00 - 15:30</orario>
+        <abstract>Esplorazione degli usi della blockchain oltre il campo finanziario, includendo applicazioni in settori come la logistica e la sanità</abstract>
+    </sessione>    
+</conferenza>

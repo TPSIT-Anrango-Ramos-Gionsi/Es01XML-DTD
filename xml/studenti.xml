@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE studenti [
+<!ELEMENT studenti (studente+)>
+<!ELEMENT studente (nome, matricola)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT matricola (#PCDATA)>
+]>
+<studenti>
+    <studente>
+        <nome>Mario Rossi</nome>
+        <matricola>12345</matricola>
+    </studente>
+    <studente>
+        <nome>Laura Bianchi</nome>
+        <matricola>67890</matricola>
+    </studente>
+</studenti>

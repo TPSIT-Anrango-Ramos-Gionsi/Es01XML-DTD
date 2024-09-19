@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rete [
+    <!ELEMENT rete (mezzo+)>
+        <!ELEMENT mezzo (tipo,linea,fermate)>
+        <!ATTLIST mezzo 
+            id ID #REQUIRED
+            capacita CDATA #IMPLIED>
+            <!ELEMENT tipo (#PCDATA)>
+            <!ELEMENT linea (#PCDATA)>
+            <!ATTLIST linea
+                numero CDATA #REQUIRED>
+            <!ELEMENT fermate (fermata+)>
+                <!ELEMENT fermata (nome,orari)>
+                <!ATTLIST fermata
+                codice ID #REQUIRED>
+                <!ELEMENT nome (#PCDATA)>
+                <!ELEMENT orari (arrivo+,partenza*)>
+                <!ELEMENT arrivo (#PCDATA)>     <!--Non mi funziona HH:MM-->
+                <!ELEMENT partenza (#PCDATA)>   <!--Non mi funziona HH:MM-->
+     ]>
+<rete>
+    <mezzo id="bus101" capacita="50 persone">
+        <tipo>Autobus Urbano</tipo>
+        <linea numero="78" />
+        <fermate>
+            <fermata codice="FER001">
+                <nome>Via Roma</nome>
+                <orari>
+                    <arrivo>08:00</arrivo>
+                    <arrivo>10:00</arrivo>
+                    <arrivo>12:00</arrivo>
+                    <partenza>08:05</partenza>
+                    <partenza>10:05</partenza>
+                    <partenza>12:05</partenza>
+                </orari>
+            </fermata>
+            <fermata codice="FER002">
+                <nome>Piazza San Giovanni</nome>
+                <orari>
+                    <arrivo>08:20</arrivo>
+                    <arrivo>10:20</arrivo>
+                    <arrivo>12:20</arrivo>
+                    <partenza>08:25</partenza>
+                    <partenza>10:25</partenza>
+                    <partenza>12:25</partenza>
+                </orari>
+            </fermata>
+
+        </fermate>
+    </mezzo>
+</rete>

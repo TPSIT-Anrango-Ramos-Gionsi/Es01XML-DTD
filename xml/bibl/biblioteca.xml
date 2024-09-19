@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+    <!ELEMENT biblioteca (libro+)>
+    <!ELEMENT libro (titolo,autore,anno)>
+    <!ELEMENT autore (#PCDATA)>
+    <!ELEMENT titolo (#PCDATA)>
+    <!ELEMENT anno (#PCDATA)>
+]>
+<biblioteca>
+    <libro>
+        <titolo>Il nome della Rosa</titolo>
+        <autore>Umberto Eco</autore>
+        <anno>1980</anno>
+    </libro>
+    <libro>
+        <titolo>1984</titolo>
+        <autore>George Orwell</autore>
+        <anno>1949</anno>
+    </libro>
+    <libro>
+        <titolo>Il Signore degli Anelli</titolo>
+        <autore>J.R.R. Tolkien</autore>
+        <anno>1954</anno>
+    </libro>
+</biblioteca>
